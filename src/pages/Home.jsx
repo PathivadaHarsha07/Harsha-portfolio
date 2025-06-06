@@ -81,10 +81,15 @@ export default function Home() {
                 <span>Get In Touch</span>
                 <div className="btn-shine"></div>
               </Link>
-              <a href="#" className="btn btn-outline btn-lg btn-animated">
+              <a
+                href="/PathivadaHarsha_softwareEngineer.pdf"
+                download
+                className="btn btn-outline btn-lg btn-animated"
+              >
                 <span>Download Resume</span>
                 <div className="btn-shine"></div>
               </a>
+
             </div>
 
             <div className="hero-social">

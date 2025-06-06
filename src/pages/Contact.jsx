@@ -8,6 +8,9 @@ export default function Contact() {
     message: ''
   })
 
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState(null)
+
   const handleInputChange = (e) => {
     const { name, value } = e.target
     setFormData(prev => ({
@@ -16,12 +19,51 @@ export default function Contact() {
     }))
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    // Handle form submission here
-    console.log('Form submitted:', formData)
-    alert('Thank you for your message! I\'ll get back to you soon.')
-    setFormData({ name: '', email: '', subject: '', message: '' })
+    setIsSubmitting(true)
+    setSubmitStatus(null)
+
+    try {
+      // Load EmailJS script dynamically
+      if (!window.emailjs) {
+        const script = document.createElement('script')
+        script.src = 'https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js'
+        document.head.appendChild(script)
+        
+        // Wait for script to load
+        await new Promise((resolve, reject) => {
+          script.onload = resolve
+          script.onerror = reject
+        })
+      }
+      
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        to_email: 'harshavardhanpathivada01@gmail.com'
+      }
+
+      await window.emailjs.send(
+        'harsha_portfolio',     // Your EmailJS service ID
+        'template_harsha1',     // Your EmailJS template ID
+        templateParams,
+        '8kCJyOlc_Th3sEjbj'     // Your EmailJS public key
+      )
+
+      setSubmitStatus('success')
+      alert('Thank you for your message! I\'ll get back to you soon.')
+      setFormData({ name: '', email: '', subject: '', message: '' })
+      
+    } catch (error) {
+      console.error('Error sending email:', error)
+      setSubmitStatus('error')
+      alert('Sorry, there was an error sending your message. Please try again or contact me directly.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const contactInfo = [
@@ -193,6 +235,7 @@ export default function Contact() {
                       onChange={handleInputChange}
                       placeholder="Your full name"
                       className="form-input"
+                      disabled={isSubmitting}
                     />
                   </div>
                   <div className="form-group">
@@ -208,6 +251,7 @@ export default function Contact() {
                       onChange={handleInputChange}
                       placeholder="your.email@example.com"
                       className="form-input"
+                      disabled={isSubmitting}
                     />
                   </div>
                 </div>
@@ -225,6 +269,7 @@ export default function Contact() {
                     onChange={handleInputChange}
                     placeholder="What's this about?"
                     className="form-input"
+                    disabled={isSubmitting}
                   />
                 </div>
 
@@ -241,26 +286,53 @@ export default function Contact() {
                     placeholder="Tell me about your project, opportunity, or just say hello..."
                     rows={6}
                     className="form-textarea"
+                    disabled={isSubmitting}
                   />
                 </div>
 
-                <button type="submit" className="btn btn-primary w-full btn-lg">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    style={{ marginRight: '0.5rem' }}
-                  >
-                    <path d="M22 2L11 13" />
-                    <polygon points="22 2 15 22 11 13 2 9 22 2" />
-                  </svg>
-                  Send Message
+                <button 
+                  type="submit" 
+                  className="btn btn-primary w-full btn-lg"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? (
+                    <>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        style={{ marginRight: '0.5rem', animation: 'spin 1s linear infinite' }}
+                      >
+                        <path d="M21 12a9 9 0 11-6.219-8.56"/>
+                      </svg>
+                      Sending...
+                    </>
+                  ) : (
+                    <>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        style={{ marginRight: '0.5rem' }}
+                      >
+                        <path d="M22 2L11 13" />
+                        <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                      </svg>
+                      Send Message
+                    </>
+                  )}
                 </button>
               </form>
             </div>

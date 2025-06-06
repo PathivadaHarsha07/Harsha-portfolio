@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Harsha-portfolio/static/css/main.bb542c76.css",
-    "main.js": "/Harsha-portfolio/static/js/main.0ec7356b.js",
+    "main.js": "/Harsha-portfolio/static/js/main.bbc55004.js",
     "static/js/453.1407b060.chunk.js": "/Harsha-portfolio/static/js/453.1407b060.chunk.js",
     "static/media/phv_logo_main.png": "/Harsha-portfolio/static/media/phv_logo_main.06d54b0a2843288b4f34.png",
     "index.html": "/Harsha-portfolio/index.html",
     "main.bb542c76.css.map": "/Harsha-portfolio/static/css/main.bb542c76.css.map",
-    "main.0ec7356b.js.map": "/Harsha-portfolio/static/js/main.0ec7356b.js.map",
+    "main.bbc55004.js.map": "/Harsha-portfolio/static/js/main.bbc55004.js.map",
     "453.1407b060.chunk.js.map": "/Harsha-portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bb542c76.css",
-    "static/js/main.0ec7356b.js"
+    "static/js/main.bbc55004.js"
   ]
 }

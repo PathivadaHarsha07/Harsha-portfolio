@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Harsha-Portfolio/static/css/main.bb542c76.css",
-    "main.js": "/Harsha-Portfolio/static/js/main.18e63bd7.js",
-    "static/js/453.1407b060.chunk.js": "/Harsha-Portfolio/static/js/453.1407b060.chunk.js",
-    "static/media/phv_logo_main.png": "/Harsha-Portfolio/static/media/phv_logo_main.06d54b0a2843288b4f34.png",
-    "index.html": "/Harsha-Portfolio/index.html",
-    "main.bb542c76.css.map": "/Harsha-Portfolio/static/css/main.bb542c76.css.map",
-    "main.18e63bd7.js.map": "/Harsha-Portfolio/static/js/main.18e63bd7.js.map",
-    "453.1407b060.chunk.js.map": "/Harsha-Portfolio/static/js/453.1407b060.chunk.js.map"
+    "main.css": "/Harsha-portfolio/static/css/main.bb542c76.css",
+    "main.js": "/Harsha-portfolio/static/js/main.28050de4.js",
+    "static/js/453.1407b060.chunk.js": "/Harsha-portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/phv_logo_main.png": "/Harsha-portfolio/static/media/phv_logo_main.06d54b0a2843288b4f34.png",
+    "index.html": "/Harsha-portfolio/index.html",
+    "main.bb542c76.css.map": "/Harsha-portfolio/static/css/main.bb542c76.css.map",
+    "main.28050de4.js.map": "/Harsha-portfolio/static/js/main.28050de4.js.map",
+    "453.1407b060.chunk.js.map": "/Harsha-portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bb542c76.css",
-    "static/js/main.18e63bd7.js"
+    "static/js/main.28050de4.js"
   ]
 }

@@ -81,9 +81,9 @@ export default function Home() {
                 <span>Get In Touch</span>
                 <div className="btn-shine"></div>
               </Link>
-              <a
-                href="/PathivadaHarsha_softwareEngineer.pdf"
-                download
+              <a 
+                href="/Harsha-portfolio/PHarshaVardhan_SoftwareEngineer.pdf"
+                download="Harshavardhan_softwareEngineer.pdf"
                 className="btn btn-outline btn-lg btn-animated"
               >
                 <span>Download Resume</span>

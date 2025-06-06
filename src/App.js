@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
@@ -15,7 +15,7 @@ import BackToTop from "./components/BackToTop.jsx"
 import "./Componentscss/backToTop.css"
 function App() {
   return (
-    <Router basename='/portfolio'>
+    <Router basename='/Harsha-portfolio'>
         
       <div className="App">
         <ScrollToTop />

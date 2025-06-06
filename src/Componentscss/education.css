@@ -1,0 +1,679 @@
+/* Modern Education Page Styles */
+
+/* Education Header */
+.modern-education-header {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0c4a6e 0%, #1e40af 50%, #7c3aed 100%);
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+.education-header-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(124, 58, 237, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(34, 197, 94, 0.1) 0%, transparent 50%);
+  animation: educationBackgroundFloat 16s ease-in-out infinite;
+}
+
+@keyframes educationBackgroundFloat {
+  0%,
+  100% {
+    transform: translateX(0) translateY(0) scale(1);
+  }
+  33% {
+    transform: translateX(20px) translateY(-15px) scale(1.02);
+  }
+  66% {
+    transform: translateX(-15px) translateY(20px) scale(0.98);
+  }
+}
+
+.education-icon-wrapper {
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 2rem;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  animation: educationIconFloat 4s ease-in-out infinite;
+}
+
+@keyframes educationIconFloat {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(3deg);
+  }
+}
+
+.education-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: 0 0 40px rgba(255, 255, 255, 0.3);
+}
+
+.education-subtitle {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Modern Education Section */
+.modern-education-section {
+  background: linear-gradient(to bottom, #f8fafc, #ffffff, #f1f5f9);
+  position: relative;
+  padding: 6rem 0;
+}
+
+.modern-education-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background: linear-gradient(to bottom, rgba(12, 74, 110, 0.1), transparent);
+}
+
+/* Academic Education Card */
+.academic-education-card {
+  background: white;
+  border-radius: 25px;
+  padding: 3rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1), 0 20px 25px -5px rgba(0, 0, 0, 0.04);
+  margin-bottom: 4rem;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.academic-education-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #2563eb, #7c3aed, #059669);
+}
+
+.section-header-modern {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.section-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.academic-icon {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+}
+
+.certification-icon {
+  background: linear-gradient(135deg, #059669, #047857);
+}
+
+.philosophy-icon {
+  background: linear-gradient(135deg, #7c3aed, #6d28d9);
+}
+
+.section-title-modern {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+.degree-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.degree-info {
+  flex: 1;
+}
+
+.degree-title-modern {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.degree-specialization {
+  font-size: 1.25rem;
+  color: #2563eb;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.institution-name-modern {
+  font-size: 1.125rem;
+  color: #64748b;
+  margin-bottom: 0.75rem;
+}
+
+.degree-duration {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.cgpa-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #059669, #047857);
+  color: white;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  animation: cgpaPulse 3s infinite;
+}
+
+@keyframes cgpaPulse {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(5, 150, 105, 0.4);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(5, 150, 105, 0);
+  }
+}
+
+.achievements-section {
+  margin-bottom: 2.5rem;
+}
+
+.subsection-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.achievements-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.achievement-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(37, 99, 235, 0.05);
+  border-radius: 12px;
+  margin-bottom: 0.75rem;
+  border-left: 4px solid #2563eb;
+  transition: all 0.3s ease;
+}
+
+.achievement-item:hover {
+  transform: translateX(10px);
+  background: rgba(37, 99, 235, 0.1);
+}
+
+.achievement-icon {
+  width: 8px;
+  height: 8px;
+  background: #2563eb;
+  border-radius: 50%;
+  margin-top: 0.5rem;
+  flex-shrink: 0;
+}
+
+.achievement-text {
+  color: #475569;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.coursework-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.75rem;
+}
+
+.coursework-badge {
+  padding: 0.75rem 1rem;
+  background: #f1f5f9;
+  color: #475569;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.coursework-badge:hover {
+  background: #e2e8f0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Certifications Grid */
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.certification-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.certification-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.15), 0 25px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.certification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.certification-info {
+  flex: 1;
+}
+
+.certification-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.certification-provider {
+  color: #059669;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.certification-date {
+  padding: 0.5rem 1rem;
+  background: rgba(5, 150, 105, 0.1);
+  color: #059669;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: 1px solid rgba(5, 150, 105, 0.2);
+}
+
+.certification-description {
+  color: #64748b;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.skills-section {
+  margin-top: 1.5rem;
+}
+
+.skills-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.75rem;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  padding: 0.375rem 0.75rem;
+  background: #f1f5f9;
+  color: #475569;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.skill-tag:hover {
+  background: #e2e8f0;
+  transform: translateY(-2px);
+}
+
+.skill-tag.animate-skill-tag {
+  animation: skillTagReveal 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@keyframes skillTagReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Philosophy Section */
+.philosophy-card {
+  background: linear-gradient(135deg, #eff6ff 0%, #f3e8ff 100%);
+  border-radius: 25px;
+  padding: 3rem;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.philosophy-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #2563eb, #7c3aed, #059669);
+}
+
+.philosophy-description {
+  color: #64748b;
+  line-height: 1.8;
+  font-size: 1.125rem;
+  margin-bottom: 2.5rem;
+}
+
+.philosophy-pillars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.pillar-card {
+  text-align: center;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.pillar-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+}
+
+.pillar-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.pillar-icon.foundation {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.pillar-icon.skills {
+  background: #dcfce7;
+  color: #059669;
+}
+
+.pillar-icon.growth {
+  background: #f3e8ff;
+  color: #7c3aed;
+}
+
+.pillar-title {
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.pillar-description {
+  color: #64748b;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Animations */
+.animate-card-reveal {
+  animation: cardRevealEducation 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@keyframes cardRevealEducation {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-achievement-reveal {
+  animation: achievementRevealEducation 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@keyframes achievementRevealEducation {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-certification-reveal {
+  animation: certificationReveal 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@keyframes certificationReveal {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-pillar-reveal {
+  animation: pillarReveal 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@keyframes pillarReveal {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slideUpEducation 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@keyframes slideUpEducation {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUpEducation 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@keyframes fadeInUpEducation {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hidden states */
+.hidden-initial {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.hidden-scale {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.hidden-bottom {
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.hidden-left {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .education-title {
+    font-size: 2.5rem;
+  }
+
+  .academic-education-card {
+    padding: 2rem;
+  }
+
+  .degree-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .degree-title-modern {
+    font-size: 1.5rem;
+  }
+
+  .certifications-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .certification-card {
+    padding: 2rem;
+  }
+
+  .philosophy-pillars {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .coursework-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .education-icon-wrapper {
+    width: 80px;
+    height: 80px;
+  }
+
+  .education-title {
+    font-size: 2rem;
+  }
+
+  .academic-education-card {
+    padding: 1.5rem;
+  }
+
+  .certification-card {
+    padding: 1.5rem;
+  }
+
+  .philosophy-card {
+    padding: 2rem;
+  }
+}
+
+/* Prevent flash of unstyled content */
+[data-animate] {
+  opacity: 0;
+}
+
+[data-animate].animate-slide-up,
+[data-animate].animate-card-reveal,
+[data-animate].animate-fade-in-up,
+[data-animate].animate-certification-reveal {
+  opacity: 1;
+}

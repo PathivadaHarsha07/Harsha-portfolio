@@ -1,6 +1,80 @@
 import { useParams, Link } from 'react-router-dom'
 
 const projectsData = {
+  "istl-group-crm-portal": {
+    title: "ISTL Group CRM & Business Development Portal",
+    description: "Centralized CRM platform to manage leads, clients, sales, procurement, and analytics across multiple business units with role-based access and workflow automation.",
+    fullDescription: "A comprehensive web-based CRM application designed to streamline Business Development, Sales, and Procurement operations within ISTL Group. The system provides end-to-end visibility into the customer lifecycle, from lead generation to invoicing and vendor billing, ensuring transparency, efficiency, and data-driven decision-making.",
+    technologies: ["React.js", "Java", "Spring Boot", "MySQL", "HTML", "CSS", "Bootstrap", "Git", "GitHub"],
+    type: "Web Application",
+    category: "Enterprise CRM",
+    status: "In Progress",
+    duration: "Ongoing",
+    client: "Internal (ISTL Group)",
+    teamSize: "2 developers",
+    features: [
+      "Lead and enquiry management with assignment and follow-up tracking",
+      "Customer and client data management with detailed profiles",
+      "Sales workflow management including proposals, quotations, sales orders, and invoices",
+      "Procurement workflow covering vendor data, quotations, purchase orders, and bills received",
+      "Role-based access control for Admin, Manager, and BD users",
+      "Activity timeline and audit logs for complete traceability",
+      "Follow-up scheduling with reminders and status tracking",
+      "Group-based categorization (Solar, EPC, CCMS, IoT, etc.) for multi-business support",
+      "Centralized document management for proposals, invoices, and compliance files",
+      "Analytics dashboards for sales performance, pipeline tracking, and financial insights"
+    ],
+    challenges: [
+      "Designing scalable workflows to support both sales and procurement lifecycles",
+      "Implementing role-based data visibility and access control",
+      "Ensuring data consistency across interconnected modules",
+      "Building reusable and maintainable frontend components"
+    ],
+    outcomes: [
+      "Improved visibility into sales and procurement operations",
+      "Reduced manual tracking through automated workflows",
+      "Enhanced follow-up efficiency and accountability",
+      "Established a scalable foundation for future CRM and ERP integrations"
+    ]
+  },
+  "istl-energy-website": {
+    title: "ISTL Energy Company Website",
+    description: "Complete responsive corporate website with modern UI design, dynamic backend integration, and live deployment to represent ISTL Energy’s digital presence.",
+    fullDescription: "A professional corporate website developed for ISTL Energy, showcasing the company’s expertise in energy solutions through a clean, modern, and responsive design. The website serves as the primary digital platform for company information, services, and customer inquiries.",
+    technologies: ["HTML", "CSS", "Bootstrap", "JavaScript", "PHP", "MySQL"],
+    type: "Website",
+    category: "Corporate Website",
+    status: "Live",
+    duration: "1 month",
+    client: "ISTL Energy",
+    teamSize: "1 developer",
+    link: "https://istlenergy.com",
+    features: [
+      "Fully responsive design optimized for all devices",
+      "Modern and interactive user interface",
+      "Dynamic content management for easy updates",
+      "SEO-optimized site structure and content",
+      "Contact and enquiry management forms",
+      "Service and solutions showcase pages",
+      "Company profile and business overview sections",
+      "News, updates, and announcements module",
+      "Social media and external platform integration",
+      "Performance and page-load optimization"
+    ],
+    challenges: [
+      "Designing a professional layout aligned with energy industry standards",
+      "Implementing SEO best practices for improved visibility",
+      "Optimizing performance for fast page load times",
+      "Ensuring maintainability for future content updates"
+    ],
+    outcomes: [
+      "Successfully launched the ISTL Energy corporate website",
+      "Strengthened the company’s online presence and branding",
+      "Improved customer engagement through structured content",
+      "Simplified enquiry handling and communication process"
+    ]
+  },
+
   "motor-control-system": {
     title: "Live Motor Control and Monitoring System",
     description: "Centralized dashboard for monitoring and controlling 6 motors and 6 valves across 10 platforms at Secunderabad Railway Station with real-time visibility and alerting system.",
@@ -288,12 +362,12 @@ export default function ProjectDetail() {
             <div className="grid grid-2">
               {project.features.map((feature, index) => (
                 <div key={index} style={{ display: 'flex', alignItems: 'flex-start', marginBottom: '0.75rem' }}>
-                  <div style={{ 
-                    width: '8px', 
-                    height: '8px', 
-                    backgroundColor: '#2563eb', 
-                    borderRadius: '50%', 
-                    marginRight: '0.75rem', 
+                  <div style={{
+                    width: '8px',
+                    height: '8px',
+                    backgroundColor: '#2563eb',
+                    borderRadius: '50%',
+                    marginRight: '0.75rem',
                     marginTop: '0.5rem',
                     flexShrink: 0
                   }}></div>
@@ -310,12 +384,12 @@ export default function ProjectDetail() {
               <ul style={{ listStyle: 'none', padding: 0 }}>
                 {project.challenges.map((challenge, index) => (
                   <li key={index} style={{ display: 'flex', alignItems: 'flex-start', marginBottom: '0.75rem' }}>
-                    <div style={{ 
-                      width: '8px', 
-                      height: '8px', 
-                      backgroundColor: '#ef4444', 
-                      borderRadius: '50%', 
-                      marginRight: '0.75rem', 
+                    <div style={{
+                      width: '8px',
+                      height: '8px',
+                      backgroundColor: '#ef4444',
+                      borderRadius: '50%',
+                      marginRight: '0.75rem',
                       marginTop: '0.5rem',
                       flexShrink: 0
                     }}></div>
@@ -330,12 +404,12 @@ export default function ProjectDetail() {
               <ul style={{ listStyle: 'none', padding: 0 }}>
                 {project.outcomes.map((outcome, index) => (
                   <li key={index} style={{ display: 'flex', alignItems: 'flex-start', marginBottom: '0.75rem' }}>
-                    <div style={{ 
-                      width: '8px', 
-                      height: '8px', 
-                      backgroundColor: '#22c55e', 
-                      borderRadius: '50%', 
-                      marginRight: '0.75rem', 
+                    <div style={{
+                      width: '8px',
+                      height: '8px',
+                      backgroundColor: '#22c55e',
+                      borderRadius: '50%',
+                      marginRight: '0.75rem',
                       marginTop: '0.5rem',
                       flexShrink: 0
                     }}></div>

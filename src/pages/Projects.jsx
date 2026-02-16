@@ -2,68 +2,100 @@ import { Link } from 'react-router-dom'
 
 export default function Projects() {
   const projects = [
-    {
-      id: "motor-control-system",
-      title: "Live Motor Control and Monitoring System",
-      description:
-        "Centralized dashboard for monitoring and controlling 6 motors and 6 valves across 10 platforms at Secunderabad Railway Station with real-time visibility and alerting system.",
-      technologies: ["React.js", "Java", "MySQL", "HTML", "CSS", "Bootstrap", "Git", "GitHub", "MQTT Protocol"],
-      type: "Web Application",
-      category: "Industrial IoT",
-      status: "Completed",
-      features: [
-        "Real-time motor and valve control",
-        "Electrical parameter monitoring", 
-        "Historical data reporting"
-      ]
-    },
-    {
-      id: "water-management-system",
-      title: "Water Management System",
-      description:
-        "Real-time monitoring system for multiple water tanks with capacity visualization, automated status indicators, and remote pump control with flow rate measurement.",
-      technologies: ["React.js", "Java", "MySQL", "HTML", "CSS", "Bootstrap", "Git", "GitHub"],
-      type: "Web Application",
-      category: "Resource Management",
-      status: "Completed",
-      features: [
-        "Tank capacity visualization",
-        "Automated pump control",
-        "Flow rate measurement"
-      ]
-    },
-    {
-      id: "ccms-system",
-      title: "Centralized Control Monitoring System (CCMS)",
-      description:
-        "Web-based dashboard for centralized control and real-time monitoring of multiple systems with dynamic visualization of live system data.",
-      technologies: ["HTML", "CSS", "Bootstrap", "JavaScript", "PHP", "MySQL"],
-      type: "Web Application",
-      category: "System Monitoring",
-      status: "Completed",
-      features: [
-        "Centralized system control",
-        "Real-time data visualization",
-        "Dynamic dashboard updates"
-      ]
-    },
-    {
-      id: "sesola-energy-website",
-      title: "Sesola Energy Company Website",
-      description:
-        "Complete responsive website with interactive user interface and dynamic backend integration, successfully deployed online.",
-      technologies: ["HTML", "CSS", "Bootstrap", "JavaScript", "PHP", "MySQL"],
-      type: "Website",
-      category: "Corporate Website",
-      status: "Live",
-      link: "https://sesolaenergy.com",
-      features: [
-        "Responsive design",
-        "Interactive user interface",
-        "Content management system"
-      ]
-    }
-  ]
+  {
+    id: "istl-group-crm-portal",
+    title: "ISTL Group CRM & Business Development Portal",
+    description:
+      "Centralized CRM platform to manage leads, clients, sales, procurement, and analytics with role-based access and workflow automation.",
+    technologies: ["React.js", "Java", "Spring Boot", "MySQL"],
+    type: "Web Application",
+    category: "Enterprise CRM",
+    status: "In Progress",
+    features: [
+      "Lead & enquiry management",
+      "Sales and procurement workflows",
+      "Analytics dashboards"
+    ]
+  },
+  {
+    id: "istl-energy-website",
+    title: "ISTL Energy Company Website",
+    description:
+      "Responsive corporate website representing ISTL Energy’s digital presence with dynamic content and enquiry management.",
+    technologies: ["HTML", "CSS", "Bootstrap", "JavaScript", "PHP", "MySQL"],
+    type: "Website",
+    category: "Corporate Website",
+    status: "Live",
+    link: "https://istlenergy.com",
+    features: [
+      "Responsive design",
+      "SEO optimization",
+      "Enquiry management"
+    ]
+  },
+  {
+    id: "motor-control-system",
+    title: "Live Motor Control and Monitoring System",
+    description:
+      "Centralized dashboard for monitoring and controlling motors and valves across railway platforms.",
+    technologies: ["React.js", "Java", "MySQL", "MQTT"],
+    type: "Web Application",
+    category: "Industrial IoT",
+    status: "Completed",
+    features: [
+      "Real-time motor control",
+      "Electrical parameter monitoring",
+      "Historical data reporting"
+    ]
+  },
+  {
+    id: "water-management-system",
+    title: "Water Management System",
+    description:
+      "Real-time monitoring and control of water tanks with flow measurement and automation.",
+    technologies: ["React.js", "Java", "MySQL"],
+    type: "Web Application",
+    category: "Resource Management",
+    status: "Completed",
+    features: [
+      "Tank capacity visualization",
+      "Automated pump control",
+      "Flow rate monitoring"
+    ]
+  },
+  {
+    id: "ccms-system",
+    title: "Centralized Control Monitoring System (CCMS)",
+    description:
+      "Centralized dashboard for monitoring and controlling multiple systems in real time.",
+    technologies: ["Java", "Spring Boot", "MySQL"],
+    type: "Web Application",
+    category: "System Monitoring",
+    status: "Completed",
+    features: [
+      "System monitoring",
+      "Real-time data visualization",
+      "Status analytics"
+    ]
+  },
+  {
+    id: "sesola-energy-website",
+    title: "Sesola Energy Company Website",
+    description:
+      "Corporate website with responsive UI and dynamic backend integration.",
+    technologies: ["HTML", "CSS", "Bootstrap", "PHP", "MySQL"],
+    type: "Website",
+    category: "Corporate Website",
+    status: "Live",
+    link: "https://sesolaenergy.com",
+    features: [
+      "Responsive UI",
+      "Content management",
+      "SEO optimization"
+    ]
+  }
+]
+
 
   return (
     <>
